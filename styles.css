@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f5; /* Soft pink background */
+    color: #4a148c; /* Deep purple text color */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #d81b60; /* Pink color for header */
+    margin: 0;
+    position: relative;
+    font-weight: 600; /* Adjusted for a bolder appearance */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #6a1b9a; /* Purple color for subtitle */
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.poems {
+    margin-bottom: 30px;
+}
+
+.poem {
+    background-color: #fce4ec; /* Light pink background for poems */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.poem h2 {
+    font-size: 1.8em;
+    color: #ad1457; /* Dark pink color for poem titles */
+    margin-bottom: 10px;
+    font-weight: 600; /* Adjusted for a bolder appearance */
+}
+
+.poem p {
+    font-size: 1.1em;
+    color: #4a148c; /* Deep purple text color for poems */
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #8e24aa; /* Light purple color for footer */
+}
+
+footer p {
+    margin: 0;
+}
+
+header::before,
+.poem::before,
+footer::before {
+    content: "♥";
+    font-size: 8em;
+    color: rgba(216, 27, 96, 0.05); /* Light pink color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+header::before {
+    font-size: 12em;
+}
+
+.poem::before {
+    font-size: 6em;
+    top: 10%;
+    left: 85%;
+}
+
+footer::before {
+    font-size: 8em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header h1 {
+    background: -webkit-linear-gradient(#d81b60, #ad1457);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(#d81b60, #ad1457);
+    background-clip: text;
+    text-fill-color: transparent;
+}
+.poem {
+    padding: 25px; /* Menambah padding untuk ruang yang lebih baik */
+    margin-bottom: 30px; /* Menambah jarak antar elemen */
+}
+
+footer {
+    padding: 20px 0; /* Menambah padding atas dan bawah footer */
+}
